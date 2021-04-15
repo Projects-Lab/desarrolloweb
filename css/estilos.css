@@ -161,6 +161,12 @@
 .user-wrapper:hover{
     cursor: pointer;
 }
+.row{
+    position: relative;
+}
+.row:hover{
+    cursor: pointer
+}
 
 .submenu{    
     display: none;
@@ -191,7 +197,7 @@ main{
     margin-top: 2rem;    
 }
 
-.card-simple{
+.tarjeta{
     width: 300px;
     height: 300px;
     justify-content: space-between;
@@ -252,57 +258,4 @@ main{
         grid-template-columns: repeat(3, 1fr);
     }
 
-}
-
-@media only screen and (max-width: 768px){
-    .cards{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-
-
-
-    .sidebar{
-        left: -100%!important;
-    }
-
-    .main-content .main-content__header h3 label{
-        text-align: center;
-        padding-left: 0;
-        margin-right: 1rem;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: var(--color);
-        color: #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .main-content .main-content__header h3 i{
-        text-align: center;
-        padding: 0;
-    }
-
-    .main-content{
-        width: 100%;
-        margin-left: 0;
-    }
-
-    .main-content .main-content__header{
-        left: 0;
-        width: 100%;
-    }
-
-    #nav-toggle:checked + .sidebar{
-        left: 0!important;
-        transition: left 300ms;
-        width: var(--ancho);
-        z-index: 100;
-    }
-
-    #nav-toggle:checked +.sidebar .sidebar__brand span{
-        display: block;
-    }
 }
