@@ -1,18 +1,119 @@
-<!DOCTYPE html>
+<html lang="es">
 
-<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <title>my-first-website</title>
-  <LINK href="styles.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compulaguito</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="js/funciones.js"></script>
+
 </head>
 
 <body>
+    <input type="checkbox" id="nav-toggle">
 
-<img src="https://octodex.github.com/images/daftpunktocat-thomas.gif" id="octocat" alt="octocat-gif" />
+    <div class="sidebar">
 
-<!-- Change this code here by copy and pasting your template on line 15 -->
-<p>Welcome to your first GitHub Pages website!</p>
+        <div class="sidebar__brand">
+            <h2>
+                <img class="sidebar__logo" src="images/tienda.png" alt="Logo">
+                <span>Compulaguito</span>
+            </h2>
+        </div>
 
+        <div class="sidebar__menu">
+
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-laptop"></i>
+                        <span>Portatiles</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-desktop"></i>
+                        <span>Torres</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="active">
+                        <i class="fas fa-desktop"></i>
+                        <span>Todo en Uno</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Celulares</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-mouse"></i>
+                        <span>Accesorios</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fas fa-print"></i>
+                        <span>Impresoras</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-photo-video"></i>
+                        <span>Audio y Video</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-wifi"></i>
+                        <span>Conectividad</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fab fa-windows"></i>
+                        <span>S.O</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="main-content ">
+        <div class="container">
+
+            <div class="row">
+                <!-- Elementos generados a partir del JSON -->
+                <main id="items" class="col-sm-8 row"></main>
+                <!-- Carrito -->
+                <div class="col-sm-4">
+                    <i class="fas fa-cart-arrow-down fa-3x"></i>
+                    <!-- Elementos del carrito -->
+                    <ul id="carrito" class="list-group"></ul>
+                    <hr>
+                    <!-- Precio total -->
+                    <p class="text-right">Total : $ <span id="total"></span></p>
+                    <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
